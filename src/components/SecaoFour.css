@@ -1,0 +1,64 @@
+.Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.Container img{
+    width: 85%;
+}
+
+
+.Cont{
+    margin-bottom: 2rem;
+}
+
+.cont{
+    flex-direction: row;
+    display: flex;
+}
+
+.Quadro{
+    scale: .9;
+    transition: .4s ease-out;
+}
+.Quadro:hover{
+    scale: 1.05;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+@media  (max-width: 900px){
+    .Container{
+        flex-direction: column;
+    }
+
+    .Cont h2{
+        display: flex;
+        text-align: start;
+        align-items: start;
+        justify-content: start;
+    }
+
+}
+
+@media  (max-width: 520px){
+    .Container{
+        flex-direction: column;
+    }
+
+    .cont{
+        width: 80%;
+    }
+
+    .Cont h2{
+        display: flex;
+        text-align: start;
+        align-items: start;
+        justify-content: start;
+        margin: 2rem;
+    }
+}
